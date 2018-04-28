@@ -66,6 +66,7 @@ namespace TrainService.NetworkData.Query
             CanWebBuy = orderedData[11];
             Unknown1 = orderedData[12];
             //StartTrainDate = DateTime.Parse(orderedData[13]);
+            if (orderedData[14] == "") orderedData[14] = 0;//默认为无空调
             TrainSeatFeature = Convert.ToInt32(orderedData[14]);
             Unknown2 = orderedData[15];
             FromStationNumber = Convert.ToInt32(orderedData[16]);
